@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font:inherit;
+}
+
+body{
+    background-image: url(background.jpg);    
+}
+
+header{
+    background: rgb(255,0,248);
+    background: linear-gradient(90deg, rgba(255,0,248,1) 0%, rgba(84,8,83,1) 100%);
+    box-shadow: black 0px 4px 16px, inset black 0px -4px 16px;
+    position: sticky;
+    top:0px;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 3vh;
+    padding: 0.01em;
+    padding-left: 0.5em;
+}
+
+.content{
+    margin-top: 32px;
+    display: grid;
+    grid-template: 1fr/ 1fr 60% 3fr ;
+}
+
+.parchment{
+    background-image: url(parchment.jpg);
+    grid-column: 2/3;
+    font-size: 25px;
+    display: grid;
+    grid-template:15vh 1fr / 15% 15% 1fr 1fr;
+    border-radius: 4px;
+    border: ridge 4px rgb(200, 200, 230);
+}
+
+.csHeader{
+    margin: 5px;
+    padding: 2px;
+    grid-area: 1/1/2/5;
+    display: grid;
+    grid-template:50% 50%/30% 1fr 1fr 1fr;
+    border: double 5px;
+    height: fit-content;
+}
+
+.csHeader div{
+    font-size: 1.5vh;
+}
+
+.csHeader div h2{
+    font-size: 3vh;
+    border-bottom: solid 1px;
+}
+
+.csAbility{
+    grid-area: 2/1/3/2;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.5vh;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul.csAbility li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(150,150,150,0.1);
+    border: solid 1px;
+    margin: 15px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+ul.csAbility li h1{
+    font-size: 1.75vh;
+}
+ul.csAbility li h2{
+    font-size: 5vh;
+}
+ul.csAbility li h3{
+    font-size: 3vh;
+    border: solid 1px;
+    width: 2em;
+    border-radius: 2em;
+}
+
+.csSkill-Save{
+    grid-area: 2/2/4/3;
+    font-family: 'Cinzel', serif;
+    font-size: 1.8vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.csSkill-Save ul{
+    border:solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.csSkill-Save ul li{
+    margin-bottom: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.8vh;
+    font-weight: bold;
+    border: solid 1px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+button.skill{
+    margin-bottom: 5px;
+    background: rgba(100,100,100,0.2);
+    border: solid 1px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+button.skill:hover{
+    background: rgba(200,200,200,0.5);
+}
+
+ul.documentation{
+    margin-left: 2%;
+}
+
+.middle-column{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.csStats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.csStats div{
+    border:solid 1px;
+    padding: 5px;
+    border-radius: 15px;
+    height: fit-content;
+    text-align: center;
+    width: 20%;
+    height: 10vh;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+.csStats div h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    font-weight: normal;
+}
+
+div.hp{
+    margin-top: 15px;
+    border:solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    height: 2.5em;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.hp h2{
+    font-size: 2.5vh;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+div.death{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.death div.death{
+
+}
+
+div.documentation{
+    background-image: url(parchment.jpg);
+    padding: 4px;
+    border-radius: 4px;
+    border: ridge 4px rgb(180, 150, 0);
+    font-size: 2.5vh;
+    margin-bottom: 2%;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between; */
+}
+
+div.documentation h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3vh;
+    font-weight: bolder;
+    width: 50%;
+}
+
+button.documentation{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Cinzel',serif;
+    font-weight: bold;
+    font-size: 2vh;
+    background: rgb(200,200,230);
+    background: radial-gradient(circle, rgba(200,200,230,1) 0%, rgba(80,80,90,1) 100%);
+    border: ridge 4px rgb(200, 200, 230);
+    border-radius: 10px;
+}
+
+button.documentation:hover{
+    background: rgb(200,200,230);
+}
+
+.hidden{
+    display: none;
+}
