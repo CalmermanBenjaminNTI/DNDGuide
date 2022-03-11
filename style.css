@@ -24,6 +24,13 @@ header{
     padding-left: 0.5em;
 }
 
+.constructionRelocator{
+    font-size: 20vh;
+    color: white;
+    border: 1px solid;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
 .content{
     margin-top: 32px;
     display: grid;
