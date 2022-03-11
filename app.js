@@ -10,6 +10,7 @@ skillButtons.forEach((button) => {
 function showSkill(event) {
     let targetClass = event.target.getAttribute("data-skill");
     document.querySelector("." + targetClass).classList.toggle("hidden");
+    document.querySelector("." + targetClass).classList.toggle("showDocumentation");
 }
 
 documentationButtons.forEach((button) => {
@@ -18,4 +19,5 @@ documentationButtons.forEach((button) => {
 
 function hideDocumentation(event) {
     event.target.parentElement.classList.add("hidden");
+    event.target.parentElement.classList.remove("showDocumentation");
 }

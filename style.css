@@ -207,9 +207,6 @@ div.documentation{
     border: ridge 4px rgb(180, 150, 0);
     font-size: 2.5vh;
     margin-bottom: 2%;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between; */
 }
 
 div.documentation h1{
@@ -233,6 +230,12 @@ button.documentation{
 
 button.documentation:hover{
     background: rgb(200,200,230);
+}
+
+.showDocumentation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
 }
 
 .hidden{
