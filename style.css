@@ -123,16 +123,17 @@ ul.csAbility li h3{
     border:double 5px;
     border-radius: 5px;
     margin-bottom: 10px;
+    min-width: 10em;
 }
 
 .csSkill-Save ul li{
+    margin: 0 5%;
     font-family: 'Cinzel', serif;
     font-size: 1.8vh;
     font-weight: bold;
     border: solid 2px;
     border-radius: 4px;
     text-align: left;
-    margin: 0 5%;
     margin-bottom: 5px;
 }
 
@@ -143,6 +144,7 @@ button.skill{
     border-radius: 4px;
     width: 90%;
     text-align: left;
+    cursor: pointer;
 }
 
 button.skill:hover{
@@ -226,9 +228,45 @@ div.death-saves{
     text-align: center;
 }
 
-div.death-saves p{
+div.death-saves{
     text-align: right;
 }
+
+div.death-saves h1{
+    text-align: center;
+}
+
+div.checkboxDiv{
+    display: inline;
+    position: relative;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 1em;
+}
+
+div.checkboxDiv input ~ .checkmark{
+    position: absolute;
+    transform: translateY(4px);
+    border: solid 1px;
+    border-radius: 4px;
+    width: inherit;
+    height: inherit;
+}
+
+div.checkboxDiv input:checked ~ .checkmark{
+    position: absolute;
+    transform: translateY(4px);
+    
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    transform: translateY(4px);
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+}
+
 
 div.documentation{
     background-image: url(parchment.jpg);
