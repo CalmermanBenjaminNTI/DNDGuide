@@ -34,12 +34,14 @@ header{
 .content{
     margin-top: 32px;
     display: grid;
-    grid-template: 1fr/ 1fr 60% 3fr ;
+    grid-template-columns: 70% 3fr ;
 }
 
 .parchment{
     background-image: url(parchment.jpg);
-    grid-column: 2/3;
+    grid-column: 1/2;
+    justify-self: right;
+    max-width: 900px;
     font-size: 25px;
     border-radius: 4px;
     border: ridge 4px rgb(200, 200, 230);
