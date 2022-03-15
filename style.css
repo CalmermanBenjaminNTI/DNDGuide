@@ -168,18 +168,17 @@ ul.documentation{
     border:double 5px;
     padding: 5px;
     border-radius: 15px;
-    height: fit-content;
     text-align: center;
-    width: 20%;
-    height: 10vh;
+    width: 25%;
+    height: 85px;
     font-family: 'Cinzel', serif;
-    font-size: 1.5vh;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .csStats div h2{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 5vh;
+    font-size: 42px;
     font-weight: normal;
 }
 
@@ -221,16 +220,17 @@ div.death-saves{
     border-radius: 10px;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 16px;
     width: 45%;
     text-align: center;
-}
-
-div.death-saves{
     text-align: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
 }
 
 div.death-saves h1{
+    width: fit-content;
     text-align: center;
 }
 
