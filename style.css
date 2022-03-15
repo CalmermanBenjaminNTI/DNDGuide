@@ -246,9 +246,9 @@ div.checkboxDiv{
 
 div.checkboxDiv input ~ .checkmark{
     border: solid 1px;
-    border-radius: 4px;
+    border-radius: 0.8em;
     position: absolute;
-    transform: translateY(3px);
+    transform: translateY(0.2em);
     width: inherit;
     height: inherit;
 }
