@@ -245,26 +245,25 @@ div.checkboxDiv{
 }
 
 div.checkboxDiv input ~ .checkmark{
-    position: absolute;
-    transform: translateY(4px);
     border: solid 1px;
     border-radius: 4px;
+    position: absolute;
+    transform: translateY(3px);
     width: inherit;
     height: inherit;
 }
 
 div.checkboxDiv input:checked ~ .checkmark{
-    position: absolute;
-    transform: translateY(4px);
-    
+    background-color: black;
 }
 
 input[type="checkbox"]{
     position: absolute;
-    transform: translateY(4px);
+    transform: translateY(3px);
+    z-index: 2;
+    width: 1em;
+    height: 1em;
     opacity: 0;
-    width: inherit;
-    height: inherit;
 }
 
 
