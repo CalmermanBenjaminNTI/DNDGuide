@@ -49,7 +49,7 @@ header{
 
 .gameplay{
     display: grid;
-    grid-template:1fr / 15% 15% 1fr 1fr;
+    grid-template:1fr / 13% 20% 1fr 1fr;
 }
 
 .csHeader{
@@ -79,33 +79,31 @@ header{
     grid-column: 1/2;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 16px;
     text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 ul.csAbility li{
-    min-width: 2em;
+    width: 2em;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: rgba(150,150,150,0.1);
     border: double 5px;
-    margin: 15px;
-    padding: 0 0.8vh;
+    margin-bottom: 15px;
+    padding: 0 24px;
     margin-top: 0px;
     border-radius: 10px;
 }
 
 ul.csAbility li h1{
-    font-size: 1.5vh;
+    font-size: 10px;
 }
 ul.csAbility li h2{
-    font-size: 5vh;
+    font-size: 40px;
 }
 ul.csAbility li h3{
-    font-size: 3vh;
+    font-size: 22px;
     border: solid 1px;
     width: 2em;
     border-radius: 2em;
@@ -114,7 +112,7 @@ ul.csAbility li h3{
 .csSkill-Save{
     grid-column: 2/3;
     font-family: 'Cinzel', serif;
-    font-size: 1.8vh;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
@@ -190,7 +188,7 @@ div.hp{
     border:double 5px;
     border-radius: 10px;
     text-align: center;
-    height: 2.5em;
+    height: fit-content;
     font-size: 5vh;
     display: flex;
     flex-direction: column;
@@ -307,4 +305,30 @@ button.documentation:hover{
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 1024px){
+    .content{
+        display: flex;
+        flex-flow: column;
+    }
+    ul.documentation{
+        order:-1;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px){
+    div.gameplay{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    ul.csAbility{
+        display: grid;
+        grid-template:1fr 1fr/33vw 33vw 33vw;
+    }
+    ul.csAbility li{
+        width: auto;
+        margin: 5px 5px;
+    }
 }
