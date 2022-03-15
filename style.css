@@ -307,7 +307,7 @@ button.documentation:hover{
     display: none;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
     .content{
         display: flex;
         flex-flow: column;
