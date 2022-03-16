@@ -318,7 +318,7 @@ button.documentation:hover{
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 426px){
     div.gameplay{
         display: flex;
         flex-flow: row wrap;
