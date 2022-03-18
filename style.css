@@ -355,6 +355,9 @@ button.documentation:hover{
         width: auto;
         margin: 5px 5px;
     }
+    .csSkill-Save{
+        width: 100%;
+    }
     .parchment{
         padding: 0px;
     }
