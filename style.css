@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(background.jpg);    
+    background-image: url(background.webp);    
 }
 
 header{
@@ -38,7 +38,7 @@ header{
 }
 
 .parchment{
-    background-image: url(parchment.jpg);
+    background-image: url(parchment.webp);
     grid-column: 1/2;
     justify-self: right;
     max-width: 900px;
@@ -273,7 +273,7 @@ input[type="checkbox"]{
 
 
 li.documentation{
-    background-image: url(parchment.jpg);
+    background-image: url(parchment.webp);
     padding: 4px;
     border-radius: 4px;
     border: ridge 4px rgb(180, 150, 0);
