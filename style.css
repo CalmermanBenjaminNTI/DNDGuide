@@ -124,6 +124,7 @@ ul.csAbility li h3{
     min-width: 10em;
 }
 
+
 .csSkill-Save ul li{
     margin: 0 5%;
     font-family: 'Cinzel', serif;
@@ -133,6 +134,11 @@ ul.csAbility li h3{
     border-radius: 4px;
     text-align: left;
     margin-bottom: 5px;
+}
+
+.csSkill-Save ul li.header{
+    border: none;
+    text-align: center;
 }
 
 button.skill{
