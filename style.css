@@ -48,7 +48,7 @@ header{
     padding: 5px;
 }
 
-.gameplay{
+form.gameplay{
     display: grid;
     grid-template:1fr / 13% 20% 1fr 1fr;
 }
@@ -343,7 +343,7 @@ button.documentation:hover{
 }
 
 @media (max-width: 426px){
-    div.gameplay{
+    form.gameplay{
         display: flex;
         flex-flow: row wrap;
     }
