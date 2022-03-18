@@ -126,7 +126,7 @@ ul.csAbility li h3{
 }
 
 
-.csSkill-Save ul li{
+.csSkill-Save ul.save li{
     margin: 0 5%;
     font-family: 'Cinzel', serif;
     font-size: 1.8vh;
@@ -272,7 +272,7 @@ input[type="checkbox"]{
 }
 
 
-div.documentation{
+li.documentation{
     background-image: url(parchment.jpg);
     padding: 4px;
     border-radius: 4px;
@@ -281,7 +281,7 @@ div.documentation{
     margin-bottom: 2%;
 }
 
-div.documentation h1{
+li.documentation h1{
     font-family: 'Cinzel', serif;
     font-size: 3vh;
     font-weight: bolder;
