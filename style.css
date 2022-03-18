@@ -45,6 +45,7 @@ header{
     font-size: 25px;
     border-radius: 4px;
     border: ridge 4px rgb(200, 200, 230);
+    padding: 5px;
 }
 
 .gameplay{
@@ -313,6 +314,23 @@ button.documentation:hover{
     display: none;
 }
 
+.construction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: double 5px;
+    border-radius: 15px;
+}
+
+.construction p{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-shadow: rgba(95, 7, 94,0.4) 2px 2px;
+}
+
 @media (max-width: 768px){
     .content{
         display: flex;
@@ -336,5 +354,11 @@ button.documentation:hover{
     ul.csAbility li{
         width: auto;
         margin: 5px 5px;
+    }
+    .parchment{
+        padding: 0px;
+    }
+    .construction{
+        display: none;
     }
 }
