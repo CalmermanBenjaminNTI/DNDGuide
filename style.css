@@ -331,6 +331,17 @@ button.documentation:hover{
     text-shadow: rgba(95, 7, 94,0.4) 2px 2px;
 }
 
+.personality{
+    border: double 5px;
+    border-radius: 10px;
+}
+
+.features{
+    margin-top: 15px;
+    border: double 5px;
+    border-radius: 10px;
+}
+
 @media (max-width: 768px){
     .content{
         display: flex;
